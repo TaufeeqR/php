@@ -13,27 +13,60 @@
 
 <?php
 
-name = "  Bob  ";
+$name = "  Bob  ";
 
-age = "thirty five";
+$age = "thirty five";
 
-$job = plumber;
+$job = "plumber";
 
-$carMake = " Toyota";
+$carMake = "Toyota";
 
 $carColour = "RED";
 
-$happy = true
+$happy = "true";
 
 $time = "this many";
 
+$break = "<br>";  
 
+//-------------------------Function--------------------//
 
+// Use trim function to remove spaces from name.
 
+$name = trim($name,' ');
 
+echo $name.$break;
 
+//---Use str_replace to replace words to number.--//
 
+// Variable first, replacement value, recall the value //
+$age = str_replace('thirty five', '35', $age);
 
+echo $age.$break;
+
+//--Remove capslock--//
+
+$carColour = strtolower($carColour);
+
+echo $carColour.$break;
+
+//--Use strlen to change time to numbers--/
+
+$time = strlen($time);
+
+echo $time.$break;
+
+//car make and colour combine//
+
+$car = $carColour.$carMake;
+
+echo $car.$break;
+
+//Work out years of retirement using math function//
+
+$retirement = ('65' - $age);
+
+echo $retirement;
 
 ?>
 
