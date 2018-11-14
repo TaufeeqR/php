@@ -66,8 +66,11 @@ echo $car.$break;
 
 $retirement = ('65' - $age);
 
-echo $retirement;
+echo $retirement.$break;
 
+$story = ($name.' is a'.' '.$job. '. He drives a'.' '.$car.' and works'.' '.$time.' hours a day.'.' He is'.' '.$age.''.' years old and is'.' '.$retirement.' '.'years from retirement.'.' '.'He is happy with his life.');
+
+echo $story.$break;
 ?>
 
 
